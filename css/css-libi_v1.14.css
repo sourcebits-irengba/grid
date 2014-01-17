@@ -63,24 +63,24 @@ sup{vertical-align:super; font-size:smaller;}
 /* Color*/
 .white{color:#fff;}
 .black{color:#000;}
-.red{color:#ff3300;}
+.red, .error{color:#ff3300;}
 .green{color:#009900;}
 .blue{color:#0e74c2;}
 .gray{color:#999;}
 .orange{color:#ff6600;}
 
 /* Width and Height Auto */
-.widthAuto{width:auto;}
-.heightAuto{height:auto;}
+.wAuto{width:auto;}
+.hAuto{height:auto;}
 
 /* Width 100 percent*/
-.wFull, .grid{width:100%;}
-
-/* Height 100 percent*/
-.hFull{height:100%;}
+.w100{width:100%;}
 
 /* Width 50 percent*/
-.half{width:50%}
+.w50{width:50%}
+
+/* Height 100 percent*/
+.h100{height:100%;}
 
 /* Border*/
 .noBorder{border:0;}

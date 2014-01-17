@@ -7,9 +7,6 @@ body {
   body:after {
     clear: both; }
 
-#appWrapper {
-  background: #f3f3f3; }
-
 #headerContent, #mainConent, #footerContent {
   max-width: 1920px;
   min-width: 1024px;
