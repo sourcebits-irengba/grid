@@ -1,0 +1,47 @@
+
+@import "grid", "mixins";
+
+$column-width:60px;
+$gutter-width:0px;
+$columns:16;
+
+$total-width:100%;
+
+#appWrapper{background:#f3f3f3;}
+#headerContent, #mainConent, #footerContent{max-width:1920px; min-width:1024px; margin:0 auto; background:#ddd;}
+
+
+/* Header
+**/
+#headerWrap{}
+#headerWrap #headerContent{}
+
+
+/* Footer
+**/
+#footerWrap{}
+#footerWrap #footerContent{}
+
+
+/* Main Content
+**/
+#contentWrap{}
+#contentWrap #mainConent{}
+
+
+
+/* Handheld Screen
+*
+@media screen and (max-width: 959px){
+	.contentWrap{
+		.mainConent{
+			.item1{
+				@include column(16, 16);
+			}
+			.item2{
+				@include column(16, 16);
+			}
+		}
+	}
+}
+*/

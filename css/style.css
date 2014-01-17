@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
+#appWrapper {
+  background: #f3f3f3; }
+
+#headerContent, #mainConent, #footerContent {
+  max-width: 1920px;
+  min-width: 1024px;
+  margin: 0 auto;
+  background: #ddd; }
+
+/* Header
+**/
+/* Footer
+**/
+/* Main Content
+**/
+/* Handheld Screen
+*
+@media screen and (max-width: 959px){
+	.contentWrap{
+		.mainConent{
+			.item1{
+				@include column(16, 16);
+			}
+			.item2{
+				@include column(16, 16);
+			}
+		}
+	}
+}
+*/
