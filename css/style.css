@@ -7,6 +7,10 @@ body {
   body:after {
     clear: both; }
 
+/* Border Radius: pass border size value
+**/
+/* Center align an element with position absolute: pass width and height
+**/
 #headerContent, #mainConent, #footerContent {
   max-width: 1920px;
   min-width: 1024px;

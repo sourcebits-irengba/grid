@@ -66,7 +66,6 @@ sup{vertical-align:super; font-size:smaller;}
 .red, .error{color:#ff3300;}
 .green{color:#009900;}
 .blue{color:#0e74c2;}
-.gray{color:#999;}
 .orange{color:#ff6600;}
 
 /* Width and Height Auto */
@@ -94,8 +93,7 @@ iframe, img{border:none;}
 /* Clear*/
 .clearLeft{clear:left;}
 .clearRight{clear:right;}
-.clear{clear:both;}
-.clearAll{clear:both; display:block; height:0;}
+.clear{clear:both; display:block; height:0;}
 .clearfix:before, .clearfix:after{content:" "; display:table;}
 .clearfix:after{clear:both;}
 

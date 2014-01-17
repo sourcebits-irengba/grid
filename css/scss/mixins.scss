@@ -1,9 +1,23 @@
 
-
+/* Border Radius: pass border size value
+**/
 @mixin borderRadius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-       -o-border-radius: $radius;
-          border-radius: $radius;
+  -webkit-border-radius: $radius+px;
+     -moz-border-radius: $radius+px;
+      -ms-border-radius: $radius+px;
+       -o-border-radius: $radius+px;
+          border-radius: $radius+px;
+}
+
+
+/* Center align an element with position absolute: pass width and height
+**/
+@mixin verticalAlignMiddle($width, $height){
+	width: $width+px;
+	height: $height+px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-top: -($height/2)+px; 
+	margin-left: -($width/2)+px;
 }
