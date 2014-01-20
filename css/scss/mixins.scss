@@ -10,9 +10,9 @@
 }
 
 
-/* Center align an element with position absolute: pass width and height
+/* Center align an element with position absolute: pass width and height. Used this for model window or popup.
 **/
-@mixin verticalAlignMiddle($width, $height){
+@mixin centerAlignMiddle($width, $height){
 	width: $width+px;
 	height: $height+px;
 	top: 50%;
@@ -20,4 +20,15 @@
 	position: absolute;
 	margin-top: -($height/2)+px; 
 	margin-left: -($width/2)+px;
+}
+
+
+/* Vertical align an inner element or content: pass width and height.
+**/
+@mixin verticalAlignMiddle($width, $height){
+	width: $width+px;
+	height: $height+px;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }

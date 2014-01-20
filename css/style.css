@@ -9,7 +9,9 @@ body {
 
 /* Border Radius: pass border size value
 **/
-/* Center align an element with position absolute: pass width and height
+/* Center align an element with position absolute: pass width and height. Used this for model window or popup.
+**/
+/* Vertical align an inner element or content: pass width and height.
 **/
 #headerContent, #mainConent, #footerContent {
   max-width: 1920px;
@@ -23,6 +25,11 @@ body {
 **/
 /* Main Content
 **/
+#contentWrap #mainConent .tableCell {
+  width: 70px;
+  height: 70px;
+  background: #0f0; }
+
 /* Handheld Screen
 *
 @media screen and (max-width: 959px){
