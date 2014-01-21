@@ -99,6 +99,8 @@ iframe, img{border:none;}
 
 /* Cursor*/
 .pointer{cursor:pointer;}
+.move{cursor:move;}
+.default{cursor:default;}
 
 /* Display*/
 .blk{display:block;}

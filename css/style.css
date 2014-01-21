@@ -9,9 +9,17 @@ body {
 
 /* Border Radius: pass border size value
 **/
+/* Text shadow. If color is in hexadecimal, prefix '#'.
+**/
+/* Box shadow. If color is in hexadecimal, prefix '#'.
+**/
+/* Box shadow with outer and inner shadow. If color is in hexadecimal, prefix '#'.
+**/
 /* Center align an element with position absolute: pass width and height. Used this for model window or popup.
 **/
 /* Vertical align an inner element or content: pass width and height.
+**/
+/* Grid Configurations
 **/
 #headerContent, #mainConent, #footerContent {
   max-width: 1920px;
@@ -25,11 +33,6 @@ body {
 **/
 /* Main Content
 **/
-#contentWrap #mainConent .tableCell {
-  width: 70px;
-  height: 70px;
-  background: #0f0; }
-
 /* Handheld Screen
 *
 @media screen and (max-width: 959px){

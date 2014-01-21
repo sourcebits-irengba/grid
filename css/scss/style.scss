@@ -1,6 +1,8 @@
 
 @import "grid", "mixins";
 
+/* Grid Configurations
+**/
 $column-width:120px;
 $gutter-width:0px;
 $columns:16;
@@ -27,8 +29,6 @@ $total-width:100%;
 **/
 #contentWrap{}
 #contentWrap #mainConent{}
-
-#contentWrap #mainConent .tableCell{width:70px; height:70px; background:#0f0;}
 
 
 /* Handheld Screen

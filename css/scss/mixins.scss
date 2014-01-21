@@ -5,8 +5,32 @@
   -webkit-border-radius: $radius+px;
      -moz-border-radius: $radius+px;
       -ms-border-radius: $radius+px;
-       -o-border-radius: $radius+px;
           border-radius: $radius+px;
+}
+
+
+/* Text shadow. If color is in hexadecimal, prefix '#'.
+**/
+@mixin textShadow($left, $top, $blurSize, $color){
+	text-shadow: $left+px $top+px $blurSize+px $color;
+}
+
+
+/* Box shadow. If color is in hexadecimal, prefix '#'.
+**/
+@mixin boxShadow($left, $top, $blurSize, $color, $type:null){
+	-moz-box-shadow: $left+px $top+px $blurSize+px $color $type;
+	-webkit-box-shadow: $left+px $top+px $blurSize+px $color $type;
+	box-shadow: $left+px $top+px $blurSize+px $color $type;
+}
+
+
+/* Box shadow with outer and inner shadow. If color is in hexadecimal, prefix '#'.
+**/
+@mixin boxShadow2d($left1, $top1, $blurSize1, $color1, $left2, $top2, $blurSize2, $color2){
+	-moz-box-shadow: $left1+px $top1+px $blurSize1+px $color1, $left2+px $top2+px $blurSize2+px $color2 inset;
+	-webkit-box-shadow: $left1+px $top1+px $blurSize1+px $color1, $left2+px $top2+px $blurSize2+px $color2 inset;
+	box-shadow: $left1+px $top1+px $blurSize1+px $color1, $left2+px $top2+px $blurSize2+px $color2 inset;
 }
 
 
@@ -18,7 +42,7 @@
 	top: 50%;
 	left: 50%;
 	position: absolute;
-	margin-top: -($height/2)+px; 
+	margin-top: -($height/2)+px;
 	margin-left: -($width/2)+px;
 }
 
@@ -32,3 +56,5 @@
     vertical-align: middle;
     text-align: center;
 }
+
+
