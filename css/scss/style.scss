@@ -10,39 +10,39 @@ $columns:16;
 $total-width:100%;
 
 #appWrapper{}
-#headerContent, #mainConent, #footerContent{max-width:1920px; min-width:1024px; margin:0 auto; background:#ddd;}
+#headerGrid, #conentGrid, #footerGrid{max-width:1920px; min-width:1024px; margin:0 auto; background:#ddd;}
 
 
 /* Header
 **/
 #headerWrap{}
-#headerWrap #headerContent{}
+#headerWrap #headerGrid{}
 
 
 /* Footer
 **/
 #footerWrap{}
-#footerWrap #footerContent{}
+#footerWrap #footerGrid{}
 
 
 /* Main Content
 **/
 #contentWrap{}
-#contentWrap #mainConent{}
+#contentWrap #conentGrid #mainConent{background:#fff; margin:0 30px;}
 
 
 /* Handheld Screen
 *
 @media screen and (max-width: 959px){
-	.contentWrap{
-		.mainConent{
-			.item1{
-				@include column(16, 16);
-			}
-			.item2{
-				@include column(16, 16);
+	#contentWrap #conentGrid{
+			#mainConent{
+				.item1{
+					@include column(16, 16);
+				}
+				.item2{
+					@include column(16, 16);
+				}
 			}
 		}
-	}
 }
 */

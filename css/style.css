@@ -21,7 +21,7 @@ body {
 **/
 /* Grid Configurations
 **/
-#headerContent, #mainConent, #footerContent {
+#headerGrid, #conentGrid, #footerGrid {
   max-width: 1920px;
   min-width: 1024px;
   margin: 0 auto;
@@ -33,18 +33,22 @@ body {
 **/
 /* Main Content
 **/
+#contentWrap #conentGrid #mainConent {
+  background: #fff;
+  margin: 0 30px; }
+
 /* Handheld Screen
 *
 @media screen and (max-width: 959px){
-	.contentWrap{
-		.mainConent{
-			.item1{
-				@include column(16, 16);
-			}
-			.item2{
-				@include column(16, 16);
+	#contentWrap #conentGrid{
+			#mainConent{
+				.item1{
+					@include column(16, 16);
+				}
+				.item2{
+					@include column(16, 16);
+				}
 			}
 		}
-	}
 }
 */
